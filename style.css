@@ -1,0 +1,129 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+    color: green;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.himg {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* navigation */
+nav {
+  background-color: green;
+  margin: 2rem 0 2rem 0;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+li {
+  display: inline-block;
+  padding: 1rem;
+}
+li:hover {
+  background-color: #fff;
+  color: green;
+}
+
+/* main */
+main {
+  margin: 2rem;
+  margin-bottom: 7rem;
+}
+h1 {
+  color: white;
+  text-align: center;
+  background-color: green;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+p {
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgb(214, 255, 214);
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product {
+  margin-top: 2rem;
+  background-color: palegreen;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+.product:hover {
+  background-color: white;
+  box-shadow: 5px 5px 3px 2px palegreen;
+}
+.pimg {
+  height: 100px;
+  width: 150px;
+}
+h4 {
+  text-align: left;
+  margin: 1rem -4rem -4rem -4rem;
+  padding: 1rem;
+  text-align: center;
+}
+/* footer */
+footer {
+  margin-top: 2rem;
+  background-color: green;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  padding-top: 1rem;
+}
+.fimg {
+  width: 2rem;
+  height: 3rem;
+}
+
+/* web view */
+
+@media screen and (min-width: 1440px) {
+    /* top */
+    .topCont{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .divide{
+        width: 40%;
+    }
+
+    /* products */
+    .products{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 4rem 0 4rem 0;
+    }
+}
